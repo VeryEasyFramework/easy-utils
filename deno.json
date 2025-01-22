@@ -1,0 +1,17 @@
+{
+  "name": "@vef/easy-utils",
+  "version": "0.1.0",
+  "exports": {
+    "./": "./mod.ts",
+    "./dateUtils": "./src/dateUtils.ts",
+    "./stringUtils": "./src/stringUtils.ts"
+  },
+  "publish": {
+    "exclude": [
+      ".github"
+    ]
+  },
+  "imports": {
+    "#/": "./src/"
+  }
+}
