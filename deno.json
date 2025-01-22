@@ -1,6 +1,8 @@
 {
   "name": "@vef/easy-utils",
   "version": "0.1.0",
+  "license": "MIT",
+  "description": "A collection of common utilities used in @vef packages",
   "exports": {
     "./": "./mod.ts",
     "./dateUtils": "./src/dateUtils.ts",
