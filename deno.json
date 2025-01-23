@@ -1,6 +1,6 @@
 {
   "name": "@vef/easy-utils",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "license": "MIT",
   "description": "A collection of common utilities used in @vef packages",
   "exports": {
@@ -8,7 +8,8 @@
     "./dateUtils": "./src/dateUtils.ts",
     "./stringUtils": "./src/stringUtils.ts",
     "./colorMe": "./src/colorMe.ts",
-    "./printUtils": "./src/printUtils.ts"
+    "./printUtils": "./src/printUtils.ts",
+    "./formatUtils": "./src/formatUtils.ts"
   },
   "publish": {
     "exclude": [
