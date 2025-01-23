@@ -6,7 +6,9 @@
   "exports": {
     "./": "./mod.ts",
     "./dateUtils": "./src/dateUtils.ts",
-    "./stringUtils": "./src/stringUtils.ts"
+    "./stringUtils": "./src/stringUtils.ts",
+    "./colorMe": "./src/colorMe.ts",
+    "./printUtils": "./src/printUtils.ts"
   },
   "publish": {
     "exclude": [
