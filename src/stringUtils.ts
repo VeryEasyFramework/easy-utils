@@ -152,5 +152,5 @@ function addLeadingZeros(value: number | string, length: number = 2): string {
   }
   return "0".repeat(length - value.length) + value;
 }
-
 export { addLeadingZeros, generateRandomString, sanitizeString };
+export default { addLeadingZeros, generateRandomString, sanitizeString };

@@ -286,3 +286,5 @@ export type BasicStyle = keyof typeof basicStyles;
 export type Color256 = number;
 export type ColorRGB = [number, number, number];
 export type ColorBasic = BasicFgColor | BasicBgColor;
+
+export default ColorMe;
