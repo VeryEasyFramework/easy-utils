@@ -320,3 +320,21 @@ export const symbol = {
     block14: "⣻",
   },
 };
+
+export default {
+  print,
+  println,
+  printLines,
+  goToTop,
+  goTo,
+  goToColumn,
+  clearScreen,
+  clearCurrentLine,
+  clearLine,
+  hideCursor,
+  showCursor,
+  clearLines,
+  clear,
+  symbols,
+  symbol,
+};
