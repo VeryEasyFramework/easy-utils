@@ -1,24 +1,24 @@
 import { addLeadingZeros } from "#/stringUtils.ts";
 
-function now() {
+function now(): Date {
   return new Date();
 }
 
-function nowTimestamp() {
+function nowTimestamp(): number {
   return now().getTime();
 }
 
-function nowFormatted(format: DateFormat, showSeconds?: boolean) {
+function nowFormatted(format: DateFormat, showSeconds?: boolean): string {
   return getPrettyDate(nowTimestamp(), { format, showSeconds });
 }
-function isToday(date: Date, now?: Date) {
+function isToday(date: Date, now?: Date): boolean {
   const today = now || new Date();
   return date.getDate() == today.getDate() &&
     date.getMonth() == today.getMonth() &&
     date.getFullYear() == today.getFullYear();
 }
 
-function isYesterday(date: Date, now?: Date) {
+function isYesterday(date: Date, now?: Date): boolean {
   const yesterday = now || new Date();
   yesterday.setDate(yesterday.getDate() - 1);
   return date.getDate() == yesterday.getDate() &&
@@ -37,11 +37,11 @@ export type DateFormat =
 function getPrettyDate(value: string | number, options?: {
   format?: DateFormat;
   showSeconds?: boolean;
-}) {
+}): string {
   const date = new Date(value);
 
   if (isNaN(date.getTime())) {
-    return value;
+    return value as string;
   }
   const formatPretty = (date: Date) => {
     const now = new Date();

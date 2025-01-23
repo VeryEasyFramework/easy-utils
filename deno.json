@@ -4,7 +4,7 @@
   "license": "MIT",
   "description": "A collection of common utilities used in @vef packages",
   "exports": {
-    "./": "./mod.ts",
+    ".": "./mod.ts",
     "./dateUtils": "./src/dateUtils.ts",
     "./stringUtils": "./src/stringUtils.ts",
     "./colorMe": "./src/colorMe.ts",
@@ -17,5 +17,8 @@
   },
   "imports": {
     "#/": "./src/"
+  },
+  "tasks": {
+    "check": "deno publish --dry-run"
   }
 }
